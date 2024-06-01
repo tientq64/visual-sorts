@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind utilities;
+
+.bar-move,
+.bar-enter-active {
+	transition: transform var(--time) linear;
+}
+
+.animate-on .bar-enter-from,
+.animate-on .bar-leave-to {
+	transform: scaleX(0);
+}
+
+.bar-leave-active {
+	position: absolute;
+}
